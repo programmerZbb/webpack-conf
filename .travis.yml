@@ -9,7 +9,7 @@ cache:
     - node_modules
 
 node_js:
-  stable
+  16
 
 install:
   - npm install -D
