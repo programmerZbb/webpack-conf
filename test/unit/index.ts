@@ -1,6 +1,7 @@
 // 单元测试，测试配置文件
 import Mocha, {describe, it} from 'mocha';
 import chai, { expect } from 'chai';
+import path from 'path';
 import webpackConf from '../../config/webpack-config';
 
 const config = webpackConf({}, {
@@ -11,6 +12,6 @@ const config = webpackConf({}, {
 describe('webpack base test case', () => {
     // config.entry
     it('entry', () => {
-        expect(config.entry['index'], 'entry error').to.equal('/Users/zhangbinbinb28199/workspace/code/some-practice/some-practice/project/webpack/project/test/unit/src/index.tsx');
+        expect(config.entry['index'], 'entry error').to.equal(path.join(process.cwd(), 'src/index.tsx'));
     });
 });
