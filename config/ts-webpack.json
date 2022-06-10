@@ -1,0 +1,8 @@
+{
+    "comment": "ts webpack的配置",
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "esModuleInterop": true
+    }
+}

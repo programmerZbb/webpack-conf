@@ -1,0 +1,1 @@
+declare module '@soda/friendly-errors-webpack-plugin'; // 未找到声明文件
