@@ -4,7 +4,7 @@
   "description": "webpack配置",
   "main": "index.js",
   "scripts": {
-    "test": "npx nyc mocha --require ts-node/register index.ts",
+    "test": "npx nyc mocha --require ts-node/register test/unit/index.ts",
     "build": "cross-env TS_NODE_PROJECT=\"./config/ts-webpack.json\" webpack --mode=production --config ./config/webpack-config.ts",
     "lint": "npx eslint --fix --ext .js,.jsx,.vue,.ts,.tsx src"
   },
