@@ -9,7 +9,9 @@
     "lint": "npx eslint --fix --ext .js,.jsx,.vue,.ts,.tsx src",
     "commit": "git-cz",
     "comment": "生成change log",
-    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "comment1": "取消git代理",
+    "unproxy": "git config --global --unset http.proxy"
   },
   "config": {
     "commitizen": {
