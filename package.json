@@ -9,7 +9,7 @@
     "lint": "npx eslint --fix --ext .js,.jsx,.vue,.ts,.tsx src",
     "commit": "git-cz",
     "comment": "生成change log",
-    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "config": {
     "commitizen": {
