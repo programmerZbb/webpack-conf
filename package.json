@@ -1,6 +1,6 @@
 {
   "name": "elvis-webpack-conf",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "webpack配置",
   "main": "index.js",
   "scripts": {
