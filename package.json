@@ -7,7 +7,9 @@
     "test": "npx nyc mocha --require ts-node/register test/unit/index.ts",
     "build": "cross-env TS_NODE_PROJECT=\"./config/ts-webpack.json\" webpack --mode=production --config ./config/webpack-config.ts",
     "lint": "npx eslint --fix --ext .js,.jsx,.vue,.ts,.tsx src",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "comment": "生成change log",
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "config": {
     "commitizen": {
@@ -36,6 +38,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "commitizen": "^4.2.4",
     "commitlint": "^17.0.2",
+    "conventional-changelog": "^3.1.25",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
